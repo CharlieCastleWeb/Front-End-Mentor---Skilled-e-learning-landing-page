@@ -4,14 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="/styles/css/main.css">
   
   <title>Frontend Mentor | Skilled e-learning landing page</title>
 </head>
 <body>
 
   <header>
-    <img src="./assets/logo-dark.svg" alt="company logo">
+    <img src="./assets/images/logo-dark.svg" alt="company logo">
     <a href="#">Get Started</a>
   </header>
 
@@ -25,27 +26,28 @@
         </p>
         <a href="#">Get Started</a>
       </div>
-      <picture >
-        <source 
-          srcset="./assets/image-hero-desktop.webp" 
-          media="(min-width: 750px)" 
-        >
-        <source 
-          srcset="./assets/image-hero-tablet.webp" 
-          media="(min-width: 450px)" 
-        >
-        <img 
-          src="./assets/image-hero-mobile.webp" 
-          alt="Hero Image"
-        >
-      </picture>
     </div>
+    <picture class="hero-image">
+      <source 
+        srcset="./assets/images/image-hero-desktop.webp" 
+        media="(min-width: 750px)" 
+      >
+      <source 
+        srcset="./assets/images/image-hero-tablet.webp" 
+        media="(min-width: 450px)" 
+      >
+      <img 
+        src="./assets/images/image-hero-mobile.webp" 
+        alt="Hero Image"
+      >
+    </picture>
 
     <div class="courses">
-      <div class="introduction">
-        <p>Check out our most popular courses!</p>
-      </div>
-      <div>
+
+      <p class="introduction">Check out our most popular courses!</p>
+
+      <div class="course">
+        <img src="./assets/images/icon-animation.svg" alt="" class="course-icon">
         <h3>Animation</h3>
         <p>
           Learn the latest animation techniques to create stunning motion 
@@ -53,7 +55,8 @@
         </p>
         <a href="#">Get Started</a>
       </div>
-      <div>
+      <div class="course">
+        <img src="./assets/images/icon-design.svg" alt="" class="course-icon">
         <h3>Design</h3>
         <p>
           Create beautiful, usable interfaces to help shape the future 
@@ -61,7 +64,8 @@
         </p>
         <a href="#">Get Started</a>
       </div>
-      <div>
+      <div class="course">
+        <img src="./assets/images/icon-photography.svg" alt="" class="course-icon">
         <h3>Photography</h3>
         <p>
           Explore critical fundamentals like lighting, composition, and focus 
@@ -69,7 +73,8 @@
         </p>
         <a href="#">Get Started</a>
       </div>
-      <div>
+      <div class="course">
+        <img src="./assets/images/icon-crypto.svg" alt="" class="course-icon">
         <h3>Crypto</h3>
         <p>
           All you need to know to get started investing in crypto. Go from beginner 
@@ -77,7 +82,8 @@
         </p>
         <a href="#">Get Started</a>
       </div>
-      <div>
+      <div class="course">
+        <img src="./assets/images/icon-business.svg" alt="" class="course-icon">
         <h3>Business</h3>
         <p>
           A step-by-step playbook to help you start, scale, and sustain your business 
@@ -89,7 +95,7 @@
   </main>
 
   <footer>
-    <img src="./assets/logo-light.svg" alt="company logo">
+    <img src="./assets/images/logo-light.svg" alt="company logo">
     <a href="#">Get Started</a>
   </footer>
 

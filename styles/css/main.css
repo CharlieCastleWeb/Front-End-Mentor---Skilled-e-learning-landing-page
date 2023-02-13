@@ -1,0 +1,168 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* VARIABLES */
+/* TYPOGRAPHY */
+@font-face {
+  font-family: Plus Jakarta Sans;
+  src: url(/assets/fonts/PlusJakartaSans-VariableFont_wght.ttf);
+}
+body {
+  font-family: Plus Jakarta Sans;
+  font-size: 16px;
+}
+
+a {
+  color: white;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #13183F;
+}
+
+.hero-text p {
+  font-weight: 500;
+  color: #83869A;
+  line-height: 1.625rem;
+}
+
+.introduction {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 800;
+  line-height: 2rem;
+}
+
+.course h3 {
+  color: #13183F;
+  font-size: 1.25rem;
+  font-weight: 800;
+  line-height: 1.575rem;
+}
+
+.course p {
+  line-height: 1.625rem;
+  font-weight: 500;
+  color: #83869A;
+}
+
+.course a {
+  color: #F74780;
+  font-size: 1.125rem;
+  font-weight: 700;
+  line-height: 1.75rem;
+}
+
+/* LAYOUT */
+header,
+.hero,
+.introduction,
+.course {
+  width: 91.5%;
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+header img {
+  width: 26.5%;
+}
+
+a {
+  display: inline-block;
+}
+
+header a {
+  background-color: #13183F;
+  padding: 0.844rem 1.51rem;
+  border-radius: 50px;
+}
+
+main {
+  margin-top: 2rem;
+}
+
+.hero-text p {
+  margin-top: 1rem;
+}
+
+.hero-text a {
+  background: linear-gradient(0deg, #F02AA6, #FF6F48);
+  margin-top: 1rem;
+  padding: 1.1rem 2.35rem;
+  border-radius: 50px;
+}
+
+.hero-image img {
+  width: 116%;
+  margin-top: 1rem;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
+.courses {
+  background: linear-gradient(0deg, #F0F1FF, #FFFFFF);
+  padding-bottom: 4.5rem;
+}
+
+.introduction {
+  background: linear-gradient(0deg, #F02AA6, #FF6F48);
+  padding: 1.75rem;
+  border-radius: 10px;
+}
+
+.course {
+  background-color: white;
+  margin-top: 2.2rem;
+  padding: 0 1.785rem;
+  border-radius: 10px;
+}
+
+.course-icon {
+  margin-left: 0rem;
+  margin-top: -1.5rem;
+}
+
+.course h3 {
+  margin-top: 1rem;
+}
+
+.course p {
+  margin-top: 1rem;
+}
+
+.course a {
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+footer {
+  background-color: #13183F;
+  padding: 2.25rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer img {
+  width: 26%;
+}
+
+footer a {
+  background: linear-gradient(0deg, #4851ff, #F02AA6);
+  border-radius: 50px;
+  padding: 0.5625rem 1.5rem;
+}/*# sourceMappingURL=main.css.map */
