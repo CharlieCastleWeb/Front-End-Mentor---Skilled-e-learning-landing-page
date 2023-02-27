@@ -113,8 +113,6 @@ main {
     margin-top: 2rem;
 }
 
-
-
 .hero-text p {
     margin-top: 1rem;
 }
@@ -126,8 +124,6 @@ main {
     border-radius: 50px;
 }
 
-
-
 .hero-image img {
     width: 116%;
     margin-top: 1rem;
@@ -136,7 +132,7 @@ main {
 }
 
 .courses {
-    background: linear-gradient(0deg, #F0F1FF, #FFFFFF);
+    background: linear-gradient(0deg, #f0f1ff, #FFFFFF);
     padding-bottom: 4.5rem;
 }
 
@@ -188,3 +184,119 @@ footer a {
     border-radius: 50px;
     padding: 0.5625rem 1.5rem;
 }
+
+@media (min-width: 650px) {
+    
+    header img {
+        width: 13%;
+    }
+
+    .hero {
+        display: flex;
+        align-items: center;
+        position: relative;
+        height: 500px;
+    }
+
+    .hero-text {
+        width: 57%;
+    }
+
+    .hero-image img {
+        width: 100%;
+        position: absolute;
+        top: -35%;
+        left: 48%;
+    }
+
+    .courses {
+        margin-top: 4rem;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .introduction,
+    .course {
+        width: 45%;
+        margin-top: 3.5rem;
+    }
+
+    .introduction {
+        padding-top: 3.5rem;
+    }
+
+    footer {
+        padding: 2.68rem 2.04rem;
+        align-items: center;
+    }
+
+    footer img {
+        width: 12.8%
+    }
+
+    footer a {
+        padding: 0.85rem 1.5rem;
+    }
+}
+
+@media (min-width: 1000px) {
+    header,
+    .hero,
+    .introduction {
+        width: 76.9736%;
+        margin: 0 auto;
+    }
+
+    header {
+        margin-top: 2.4218rem;
+    }
+
+    header img {
+        width: 10.1%;
+    }
+
+    header a {
+        padding: 1.1rem 2.36rem;
+    }
+
+    h1 {
+        font-size: 3.5rem;
+    }
+
+    .hero {
+        margin-top: 7rem;
+    }
+
+    .hero-text p {
+        font-size: 1.125rem;
+        margin-top: 1.8125rem;
+        width: 70%;
+    }
+
+    .hero-text a {
+        margin-top: 2.5rem;
+    }
+
+    .hero img {
+        width: 95%;
+        position: absolute;
+        top: -75%;
+        left: 50%;
+    }
+
+    .courses {
+        padding: 0 10.3125rem 4.5rem 10.3125rem;
+    }
+
+    .introduction,
+    .course {
+        width: 30%;
+        margin-top: 3.5rem;
+    }
+
+    footer {
+        padding: 2rem 10.3125rem;
+    }
+}
+
+
