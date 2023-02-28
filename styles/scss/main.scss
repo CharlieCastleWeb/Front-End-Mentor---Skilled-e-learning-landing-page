@@ -147,6 +147,8 @@ main {
     margin-top: 2.2rem;
     padding: 0 1.785rem;
     border-radius: 10px;
+    position: relative;
+    height: 275px;
 }
 
 .course-icon {
@@ -160,11 +162,14 @@ main {
 
 .course p {
     margin-top: 1rem;
+    margin-bottom: 1.5rem;
 }
 
 .course a {
-    margin-top: 1.5rem;
+    margin-top: auto;
     margin-bottom: 2rem;
+    position: absolute;
+    bottom: 0;
 }
 
 footer {
@@ -304,6 +309,7 @@ footer a {
     .course {
         width: 30%;
         margin-top: 3.5rem;
+        margin-left: 0;
     }
 
     .course a:hover {
