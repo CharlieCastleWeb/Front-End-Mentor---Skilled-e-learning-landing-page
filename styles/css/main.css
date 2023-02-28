@@ -262,12 +262,12 @@ footer a {
   }
   .courses {
     padding: 0 10.3125rem 4.5rem 10.3125rem;
+    gap: 10px;
   }
   .introduction,
   .course {
     width: 30%;
     margin-top: 3.5rem;
-    margin-left: 0;
   }
   .course a:hover {
     color: #FFA7C3;
