@@ -15,7 +15,7 @@ $blue-dark: #13183F;
 $gray: #83869A;
 $pink-bright: #F74780;
 $grad-orange-pink: linear-gradient(0deg, #F02AA6, #FF6F48);
-$grad-purple-pink: linear-gradient(0deg, #4851ff, #F02AA6);
+$grad-purple-pink: linear-gradient(180deg, #4851FF -54.32%, #F02AA6);
 
 
 /* TYPOGRAPHY */
@@ -259,6 +259,11 @@ footer a {
         padding: 1.1rem 2.36rem;
     }
 
+    header a:hover {
+        cursor: pointer;
+        background-color: $purple;
+    }
+
     h1 {
         font-size: 3.5rem;
     }
@@ -277,11 +282,18 @@ footer a {
         margin-top: 2.5rem;
     }
 
+    .hero-text a:hover {
+        cursor: pointer;
+        background: linear-gradient(0deg, rgba(255,255,255,0.5), rgba(255,255,255,0.5)), 
+                    $grad-orange-pink;
+    }
+
     .hero img {
         width: 95%;
         position: absolute;
         top: -75%;
         left: 50%;
+        z-index: -1;
     }
 
     .courses {
@@ -294,8 +306,17 @@ footer a {
         margin-top: 3.5rem;
     }
 
+    .course a:hover {
+        color: #FFA7C3;
+    }
+
     footer {
         padding: 2rem 10.3125rem;
+    }
+
+    footer a:hover {
+        background: linear-gradient(0deg, rgba(255,255,255,0.5), rgba(255,255,255,0.5)),
+                    $grad-purple-pink;
     }
 }
 
