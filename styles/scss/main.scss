@@ -192,6 +192,12 @@ footer a {
 
 @media (min-width: 650px) {
     
+    html,
+    body {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
     header img {
         width: 13%;
     }
@@ -244,7 +250,10 @@ footer a {
     }
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1200px) {
+    
+    
+
     header,
     .hero,
     .introduction {
@@ -303,13 +312,13 @@ footer a {
 
     .courses {
         padding: 0 10.3125rem 4.5rem 10.3125rem;
-        gap: 10px;
+        gap: 30px;
     }
 
     .introduction,
     .course {
-        width: 30%;
-        margin-top: 3.5rem;
+        width: 31%;
+        margin: 0;
     }
 
     .course a:hover {
