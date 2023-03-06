@@ -73,7 +73,7 @@ h1 {
     font-size: 1.125rem;
     font-weight: 700;
     line-height: 1.75rem;
-    
+
 }
 
 /* LAYOUT */
@@ -100,7 +100,7 @@ header img {
 
 a {
     display: inline-block;
-    
+
 }
 
 header a {
@@ -131,8 +131,11 @@ main {
     transform: translateX(-50%);
 }
 
-.courses {
+.courses-container {
     background: linear-gradient(0deg, #f0f1ff, #FFFFFF);
+}
+
+.courses {
     padding-bottom: 4.5rem;
 }
 
@@ -144,11 +147,11 @@ main {
 
 .course {
     background-color: white;
-    margin-top: 2.2rem;
+    margin-top: 2.5rem;
     padding: 0 1.785rem;
     border-radius: 10px;
     position: relative;
-    height: 275px;
+    height: 283px;
 }
 
 .course-icon {
@@ -191,7 +194,7 @@ footer a {
 }
 
 @media (min-width: 650px) {
-    
+
     html,
     body {
         max-width: 100%;
@@ -205,19 +208,25 @@ footer a {
     .hero {
         display: flex;
         align-items: center;
-        position: relative;
         height: 500px;
+        position: relative;
     }
 
     .hero-text {
         width: 57%;
     }
+    
+    .hero-image {
+        width: 30%;
+    }
 
     .hero-image img {
-        width: 100%;
+        width: 95%;
         position: absolute;
-        top: -35%;
-        left: 48%;
+        right: -45%;
+        top: 40%;
+        transform: translateX(-50%);
+        transform: translateY(-50%);
     }
 
     .courses {
@@ -236,6 +245,10 @@ footer a {
         padding-top: 3.5rem;
     }
 
+    .course {
+        height: 259px;
+    }
+
     footer {
         padding: 2.68rem 2.04rem;
         align-items: center;
@@ -250,13 +263,11 @@ footer a {
     }
 }
 
-@media (min-width: 1200px) {
-    
-    
+@media (min-width: 1000px) {
 
     header,
     .hero,
-    .introduction {
+    .introduction, .courses {
         width: 76.9736%;
         margin: 0 auto;
     }
@@ -298,28 +309,45 @@ footer a {
 
     .hero-text a:hover {
         cursor: pointer;
-        background: linear-gradient(0deg, rgba(255,255,255,0.5), rgba(255,255,255,0.5)), 
+        background: linear-gradient(0deg, rgba(255,255,255,0.5), rgba(255,255,255,0.5)),
                     $grad-orange-pink;
     }
 
     .hero img {
+        width: 85%;
+        max-width: 990px;
+        // width: 991px;
+        // position: absolute;
+        top: 20%;
+        right: -40%;
+        z-index: -1;
+
+        /*
         width: 95%;
         position: absolute;
-        top: -75%;
-        left: 50%;
-        z-index: -1;
+        right: -45%;
+        top: 40%;
+        transform: translateX(-50%);
+        transform: translateY(-50%);
+        */
     }
 
     .courses {
-        padding: 0 10.3125rem 4.5rem 10.3125rem;
-        gap: 30px;
+        // padding: 0 10.3125rem 4.5rem 10.3125rem;
+        column-gap: 30px;
+        row-gap: 40px;
     }
 
     .introduction,
     .course {
-        width: 31%;
+        width: 30%;
         margin: 0;
+        // min-height: 330px;
+        padding-bottom: 4rem;
+        height: 322px;
     }
+
+
 
     .course a:hover {
         color: #FFA7C3;
@@ -332,6 +360,13 @@ footer a {
     footer a:hover {
         background: linear-gradient(0deg, rgba(255,255,255,0.5), rgba(255,255,255,0.5)),
                     $grad-purple-pink;
+    }
+}
+
+@media (min-width: 1600px) {
+    header, main, footer {
+        max-width: 1600px;
+        margin: 0 auto;
     }
 }
 
