@@ -1,5 +1,4 @@
 
-
 /* RESET */
 
 * {
@@ -193,6 +192,8 @@ footer a {
     padding: 0.5625rem 1.5rem;
 }
 
+/* TABLETS LAYOUT */
+
 @media (min-width: 650px) {
 
     html,
@@ -263,6 +264,8 @@ footer a {
     }
 }
 
+/* SCREEN LAYOUT */
+
 @media (min-width: 1000px) {
 
     header,
@@ -316,24 +319,12 @@ footer a {
     .hero img {
         width: 85%;
         max-width: 990px;
-        // width: 991px;
-        // position: absolute;
         top: 20%;
         right: -40%;
         z-index: -1;
-
-        /*
-        width: 95%;
-        position: absolute;
-        right: -45%;
-        top: 40%;
-        transform: translateX(-50%);
-        transform: translateY(-50%);
-        */
     }
 
     .courses {
-        // padding: 0 10.3125rem 4.5rem 10.3125rem;
         column-gap: 30px;
         row-gap: 40px;
     }
@@ -346,8 +337,6 @@ footer a {
         padding-bottom: 4rem;
         height: 322px;
     }
-
-
 
     .course a:hover {
         color: #FFA7C3;
@@ -362,6 +351,8 @@ footer a {
                     $grad-purple-pink;
     }
 }
+
+/* BIG SCREENS LAYOUT */
 
 @media (min-width: 1600px) {
     header, main, footer {

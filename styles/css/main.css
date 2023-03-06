@@ -175,6 +175,7 @@ footer a {
   padding: 0.5625rem 1.5rem;
 }
 
+/* TABLETS LAYOUT */
 @media (min-width: 650px) {
   html,
   body {
@@ -231,6 +232,7 @@ footer a {
     padding: 0.85rem 1.5rem;
   }
 }
+/* SCREEN LAYOUT */
 @media (min-width: 1000px) {
   header,
   .hero,
@@ -275,14 +277,6 @@ footer a {
     top: 20%;
     right: -40%;
     z-index: -1;
-    /*
-    width: 95%;
-    position: absolute;
-    right: -45%;
-    top: 40%;
-    transform: translateX(-50%);
-    transform: translateY(-50%);
-    */
   }
   .courses {
     -moz-column-gap: 30px;
@@ -306,6 +300,7 @@ footer a {
     background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(180deg, #4851FF -54.32%, #F02AA6);
   }
 }
+/* BIG SCREENS LAYOUT */
 @media (min-width: 1600px) {
   header, main, footer {
     max-width: 1600px;
